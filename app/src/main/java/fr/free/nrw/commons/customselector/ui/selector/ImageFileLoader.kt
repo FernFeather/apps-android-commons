@@ -89,7 +89,7 @@ class ImageFileLoader(val context: Context) : CoroutineScope{
                         null
                     }
 
-                if (file != null && file.exists() && name != null && path != null && bucketName != null) {
+                if (file != null && file.exists() && name != null && path != null && bucketName != null ) {
                     val uri = ContentUris.withAppendedId(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, id)
 
                     val calendar = Calendar.getInstance()
